@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 863330620908248529}
   m_Layer: 0
   m_Name: Enemy-beetle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,7 +135,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -148,7 +148,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1543542670040034694
 MonoBehaviour:
@@ -163,8 +163,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
-  palyer: {fileID: 0}
-  damage: 10
+  attackInterval: 0.1
+  health: 5
+  damage: 2
 --- !u!114 &863330620908248529
 MonoBehaviour:
   m_ObjectHideFlags: 0

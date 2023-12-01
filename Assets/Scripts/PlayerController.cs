@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         moveInput.Set(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0f);
-        /*rb.velocity = moveInput.normalized * moveSpeed * Time.deltaTime;*/
+        //rb.velocity = moveInput.normalized * moveSpeed * Time.deltaTime;
         transform.position +=
             moveInput.normalized
             * moveSpeed * Time.deltaTime;
