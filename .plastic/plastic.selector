@@ -1,0 +1,4 @@
+repository "Survivors@friendly_fr@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
