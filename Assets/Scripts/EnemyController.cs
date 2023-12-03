@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements.Experimental;
 
 public class EnemyController : MonoBehaviour
 {
@@ -14,9 +15,14 @@ public class EnemyController : MonoBehaviour
     private Vector3 direct;
 
     public float health = 5f;
-    
+
+    private float knockBack;
+    private float knockBackCounter;
+    private float takeDamageInterval;
 
     public float damage;
+
+    public int expLevelToGive = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +34,16 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(knockBackCounter > 0)
+        {
+            knockBackCounter -= Time.deltaTime; 
+            if (moveSpeed > 0)
+                moveSpeed = moveSpeed * -knockBack;
+            if (knockBackCounter < 0)
+                moveSpeed = Mathf.Abs(moveSpeed / knockBack);
+        }
+
+        takeDamageInterval -= Time.deltaTime;
         attackTimer += Time.deltaTime;
         if (player != null && player.activeSelf) 
         {
@@ -75,7 +91,41 @@ public class EnemyController : MonoBehaviour
         if (health < 0.0f)
         {
             Destroy(gameObject);
+            ExperienceLevelController.Instance.SpawnExp(transform.position, expLevelToGive);
+        }
+        DamagerNumberController.instance.SpawnDamage(damageToTake, transform.position);
+    }
+
+    public void TakeDamage(float damageToTake, float strenth)
+    {
+        
+        TakeDamage(damageToTake);
+
+        if(strenth > 0.0f)
+        {
+            knockBackCounter = 0.1f;
+            knockBack = strenth;
         }
     }
- 
+
+    public void TakeDamage(float damageToTake, float strenth, float attackInterval)
+    {
+        if (takeDamageInterval <= 0)
+        {
+            TakeDamage(damageToTake);
+        }
+        else
+        {
+            return;
+        }
+        takeDamageInterval = attackInterval;
+
+        if (strenth > 0.0f)
+        {
+            knockBackCounter = 0.1f;
+            knockBack = strenth;
+        }
+    }
+
 }
+

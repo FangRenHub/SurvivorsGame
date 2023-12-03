@@ -10,7 +10,7 @@ public class PlayerHealthController : MonoBehaviour
     {
         instance = this;
     }
-
+    
     public Slider healthSlider;
     public float currentHealth, maxHealth;
     // Start is called before the first frame update
