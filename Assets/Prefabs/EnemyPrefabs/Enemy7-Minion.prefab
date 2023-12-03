@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6443414331705950873}
   - component: {fileID: 9121831640075836575}
   - component: {fileID: 726245378061993411}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy7-Minion
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -285977499
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -1984684752, guid: 454e010d08455084891b3c87cf565bee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -166,6 +166,7 @@ MonoBehaviour:
   attackInterval: 0.1
   health: 7
   damage: 4
+  expLevelToGive: 1
 --- !u!114 &726245378061993411
 MonoBehaviour:
   m_ObjectHideFlags: 0

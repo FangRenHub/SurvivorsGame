@@ -34,6 +34,7 @@ public class SpinWeapon : Weapon
             {
                 float rot = (360f / weaponStats[weaponLevel].amount * i);
                 Instantiate(holder, transform.position, Quaternion.Euler(0f, 0f, rot), Controller).gameObject.SetActive(true);
+                //Instantiate(damager.gameObject, damager.transform.position, Quaternion.Euler(0f, 0f, rot), holder).SetActive(true);
             }
         }
 
@@ -46,18 +47,18 @@ public class SpinWeapon : Weapon
 
     public void SetStats()
     {
+        rotateSpeed = weaponStats[weaponLevel].speed;
+
         damager.damagaAmount = weaponStats[weaponLevel].damage;
 
         damager.Weaponstrength = weaponStats[weaponLevel].strength;
 
-        damager.transform.localScale = Vector3.one * weaponStats[weaponLevel].range;
+        Controller.transform.localScale = Vector3.one * weaponStats[weaponLevel].range;
             
         timeBetweenSpawn = weaponStats[weaponLevel].timeBetweenAAtacks;
 
         damager.leftTime = weaponStats[weaponLevel].duration;
         
-        rotateSpeed = weaponStats[weaponLevel].speed;
-
         spawnCounter = 0f;
     }
 }

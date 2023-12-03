@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - DisppearRect
+  - WeaponHolder
+  - SpawnAnimationWeapon
   layers:
   - Default
   - TransparentFX
@@ -13,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -54,6 +56,9 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 4008989797
+    locked: 0
+  - name: Weapons
+    uniqueID: 993430073
     locked: 0
   - name: Player
     uniqueID: 3819073515

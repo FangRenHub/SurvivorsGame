@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3791459929496405535}
   - component: {fileID: 7194028049926176850}
   - component: {fileID: 1119375561016807412}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy5-Skull
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -285977499
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -409451246, guid: 454e010d08455084891b3c87cf565bee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -166,6 +166,7 @@ MonoBehaviour:
   attackInterval: 0.1
   health: 8
   damage: 4
+  expLevelToGive: 1
 --- !u!114 &1119375561016807412
 MonoBehaviour:
   m_ObjectHideFlags: 0

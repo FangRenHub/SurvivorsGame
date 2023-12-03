@@ -564,7 +564,7 @@ TextureImporter:
         width: 28
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -572,6 +572,27 @@ TextureImporter:
       bones: []
       spriteID: ccb5fc6f016667148a095bbfb919a9ee
       internalID: -96327553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis_sprites-and-tiles-for-you_21
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 807
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd99d3ed989ec5439024feb08388a65
+      internalID: 1637119241
       vertices: []
       indices: 
       edges: []
@@ -601,6 +622,7 @@ TextureImporter:
       hyptosis_sprites-and-tiles-for-you_19: -1732903078
       hyptosis_sprites-and-tiles-for-you_2: 2074038547
       hyptosis_sprites-and-tiles-for-you_20: -96327553
+      hyptosis_sprites-and-tiles-for-you_21: 1637119241
       hyptosis_sprites-and-tiles-for-you_3: 709803277
       hyptosis_sprites-and-tiles-for-you_4: 180082387
       hyptosis_sprites-and-tiles-for-you_5: 2081584891

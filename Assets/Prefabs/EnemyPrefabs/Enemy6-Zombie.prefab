@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1953103632387731506}
   - component: {fileID: 8562579216492720889}
   - component: {fileID: 2120210750411476110}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy6-Zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -285977499
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -919574096, guid: 454e010d08455084891b3c87cf565bee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -166,6 +166,7 @@ MonoBehaviour:
   attackInterval: 0.1
   health: 12
   damage: 5
+  expLevelToGive: 1
 --- !u!114 &2120210750411476110
 MonoBehaviour:
   m_ObjectHideFlags: 0

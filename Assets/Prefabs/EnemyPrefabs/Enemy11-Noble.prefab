@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9115703201154566640}
   - component: {fileID: 1770211241140934931}
   - component: {fileID: 6355124433510271231}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy11-Noble
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -285977499
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -1682459617, guid: 454e010d08455084891b3c87cf565bee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -166,6 +166,7 @@ MonoBehaviour:
   attackInterval: 0.1
   health: 15
   damage: 10
+  expLevelToGive: 1
 --- !u!114 &6355124433510271231
 MonoBehaviour:
   m_ObjectHideFlags: 0

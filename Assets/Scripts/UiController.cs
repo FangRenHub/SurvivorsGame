@@ -15,7 +15,10 @@ public class UiController : MonoBehaviour
     }
 
     public Slider explevelSlider;
+
     public TMP_Text expLevelText;
+
+    public TMP_Text coinText;
 
     public LvUpSelectionButton[] LvUpSelectionButtons;
 
@@ -37,5 +40,10 @@ public class UiController : MonoBehaviour
     {
         levelUpPanel.SetActive(false);
         Time.timeScale = 1f;
+    }
+
+    public void UpdateCoins()
+    {
+        coinText.text = "Coins: " + CoinController.instance.currentCoins;
     }
 }
