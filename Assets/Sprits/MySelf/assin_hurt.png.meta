@@ -134,7 +134,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: assin_hurt_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800b8fe279b775e418274530b4085c78
+      internalID: 1116109569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assin_hurt_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba23dfe22df41604bbeb4668046d2769
+      internalID: 442644026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assin_hurt_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0de5ac25e0d87845a01f07f72b923a0
+      internalID: 583059751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assin_hurt_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c971ecb7f92cc0438f361755ca192d6
+      internalID: -2104965860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assin_hurt_4
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 40
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7fd8c397a81c924a9b258a8928013e4
+      internalID: -826481947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +250,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      assin_hurt_0: 1116109569
+      assin_hurt_1: 442644026
+      assin_hurt_2: 583059751
+      assin_hurt_3: -2104965860
+      assin_hurt_4: -826481947
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

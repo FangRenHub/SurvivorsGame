@@ -8,6 +8,7 @@ TagManager:
   - DisppearRect
   - WeaponHolder
   - SpawnAnimationWeapon
+  - Pickup
   layers:
   - Default
   - TransparentFX
@@ -59,6 +60,9 @@ TagManager:
     locked: 0
   - name: Weapons
     uniqueID: 993430073
+    locked: 0
+  - name: Effect
+    uniqueID: 2242632239
     locked: 0
   - name: Player
     uniqueID: 3819073515

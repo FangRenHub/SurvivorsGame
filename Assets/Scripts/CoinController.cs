@@ -27,4 +27,10 @@ public class CoinController : MonoBehaviour
         newCoin.gameObject.SetActive(true);
     }
 
+    public void SpendCoins(int cost)
+    {
+        currentCoins -= cost;
+        UiController.instance.UpdateCoins();
+    }
+
 }

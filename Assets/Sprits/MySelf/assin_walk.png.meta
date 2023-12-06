@@ -139,10 +139,10 @@ TextureImporter:
       name: assin_walk_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 17
         y: 192
-        width: 39
-        height: 50
+        width: 30
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,12 +160,12 @@ TextureImporter:
       name: assin_walk_1
       rect:
         serializedVersion: 2
-        x: 75
+        x: 81
         y: 192
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,15 +178,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_2
+      name: assin_walk_10
       rect:
         serializedVersion: 2
-        x: 138
-        y: 192
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 135
+        y: 128
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,15 +199,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_3
+      name: assin_walk_11
       rect:
         serializedVersion: 2
-        x: 201
-        y: 192
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 199
+        y: 128
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,15 +220,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_4
+      name: assin_walk_12
       rect:
         serializedVersion: 2
         x: 264
-        y: 192
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        y: 128
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,15 +241,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_5
+      name: assin_walk_13
       rect:
         serializedVersion: 2
         x: 327
-        y: 192
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        y: 128
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,15 +262,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_6
+      name: assin_walk_14
       rect:
         serializedVersion: 2
         x: 390
-        y: 192
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        y: 128
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,15 +283,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_7
+      name: assin_walk_15
       rect:
         serializedVersion: 2
-        x: 453
-        y: 192
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 454
+        y: 128
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,12 +304,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_8
+      name: assin_walk_16
       rect:
         serializedVersion: 2
-        x: 7
-        y: 128
-        width: 39
+        x: 17
+        y: 64
+        width: 30
         height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -325,12 +325,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_9
+      name: assin_walk_17
       rect:
         serializedVersion: 2
-        x: 71
-        y: 128
-        width: 39
+        x: 81
+        y: 64
+        width: 30
         height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -346,13 +346,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_10
+      name: assin_walk_18
       rect:
         serializedVersion: 2
-        x: 135
-        y: 128
-        width: 39
-        height: 50
+        x: 145
+        y: 64
+        width: 30
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,12 +367,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_11
+      name: assin_walk_19
       rect:
         serializedVersion: 2
-        x: 199
-        y: 128
-        width: 39
+        x: 209
+        y: 64
+        width: 30
         height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -388,13 +388,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_12
+      name: assin_walk_2
       rect:
         serializedVersion: 2
-        x: 264
-        y: 128
-        width: 39
-        height: 50
+        x: 145
+        y: 192
+        width: 30
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -409,12 +409,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_13
+      name: assin_walk_20
       rect:
         serializedVersion: 2
-        x: 327
-        y: 128
-        width: 39
+        x: 273
+        y: 64
+        width: 30
         height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -430,12 +430,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_14
+      name: assin_walk_21
       rect:
         serializedVersion: 2
-        x: 390
-        y: 128
-        width: 39
+        x: 337
+        y: 64
+        width: 30
         height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -451,13 +451,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_15
+      name: assin_walk_22
       rect:
         serializedVersion: 2
-        x: 454
-        y: 128
-        width: 39
-        height: 50
+        x: 401
+        y: 64
+        width: 30
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -472,15 +472,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_16
+      name: assin_walk_23
       rect:
         serializedVersion: 2
-        x: 12
+        x: 465
         y: 64
-        width: 39
+        width: 30
         height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -493,15 +493,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_17
+      name: assin_walk_24
       rect:
         serializedVersion: 2
-        x: 75
-        y: 64
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 18
+        y: 0
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -514,15 +514,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_18
+      name: assin_walk_25
       rect:
         serializedVersion: 2
-        x: 138
-        y: 64
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 82
+        y: 0
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -535,15 +535,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_19
+      name: assin_walk_26
       rect:
         serializedVersion: 2
-        x: 201
-        y: 64
-        width: 39
+        x: 146
+        y: 0
+        width: 33
         height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -556,15 +556,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_20
+      name: assin_walk_27
       rect:
         serializedVersion: 2
-        x: 264
-        y: 64
-        width: 39
+        x: 210
+        y: 0
+        width: 36
         height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -577,15 +577,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_21
+      name: assin_walk_28
       rect:
         serializedVersion: 2
-        x: 327
-        y: 64
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 273
+        y: 0
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -598,15 +598,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_22
+      name: assin_walk_29
       rect:
         serializedVersion: 2
-        x: 390
-        y: 64
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 338
+        y: 0
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -619,15 +619,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_23
+      name: assin_walk_3
       rect:
         serializedVersion: 2
-        x: 453
-        y: 64
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 209
+        y: 192
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -640,15 +640,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_24
+      name: assin_walk_30
       rect:
         serializedVersion: 2
-        x: 12
+        x: 403
         y: 0
         width: 39
         height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -661,15 +661,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_25
+      name: assin_walk_31
       rect:
         serializedVersion: 2
-        x: 75
+        x: 467
         y: 0
-        width: 39
+        width: 31
         height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -682,15 +682,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_26
+      name: assin_walk_4
       rect:
         serializedVersion: 2
-        x: 138
-        y: 0
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 273
+        y: 192
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -703,15 +703,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_27
+      name: assin_walk_5
       rect:
         serializedVersion: 2
-        x: 201
-        y: 0
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 337
+        y: 192
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -724,15 +724,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_28
+      name: assin_walk_6
       rect:
         serializedVersion: 2
-        x: 264
-        y: 0
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 401
+        y: 192
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -745,15 +745,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_29
+      name: assin_walk_7
       rect:
         serializedVersion: 2
-        x: 327
-        y: 0
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 465
+        y: 192
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -766,15 +766,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_30
+      name: assin_walk_8
       rect:
         serializedVersion: 2
-        x: 390
-        y: 0
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 7
+        y: 128
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -787,15 +787,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: assin_walk_31
+      name: assin_walk_9
       rect:
         serializedVersion: 2
-        x: 453
-        y: 0
-        width: 39
-        height: 50
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 71
+        y: 128
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

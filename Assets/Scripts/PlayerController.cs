@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UIElements.Experimental;
@@ -14,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed;
 
-    public float pickupRange = 1.5f;
+    //public float pickupRange = 1.5f;
 
     public int maxWeapons = 3;
 
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveInput;
 
     //public Weapon activeWeapon;
+    [HideInInspector]
     public List<Weapon> unassignedWeapons, assignedWeapons;
 
     [HideInInspector]
@@ -33,14 +35,18 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
 
         if(assignedWeapons.Count == 0)
-            AddWeapon(Random.Range(0, unassignedWeapons.Count));
+            AddWeapon(UnityEngine.Random.Range(0, unassignedWeapons.Count));
+
+        moveSpeed = PlayerStatController.instance.moveSpeed[0].value;
+        maxWeapons = Mathf.RoundToInt(PlayerStatController.instance.maxWeapons[0].value);
     }
 
     
     void Update()
     {
+        if (!PlayerHealthController.instance.isAlive) return;
+
         moveInput.Set(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0f);
-        //rb.velocity = moveInput.normalized * moveSpeed * Time.deltaTime;
         transform.position +=
             moveInput.normalized
             * moveSpeed * Time.deltaTime;

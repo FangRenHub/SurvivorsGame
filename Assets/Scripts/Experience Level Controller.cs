@@ -62,13 +62,8 @@ public class ExperienceLevelController : MonoBehaviour
             currentLevel = levelCount - 1;
         }
 
-        //PlayerController.instance.activeWeapon.LeveUp(); //以切换到Button进行更新
+        //随机出现可升级武器
         UiController.instance.levelUpPanel.SetActive(true);
-
-        //UiController.instance.LvUpSelectionButtons[1].updataButtonDisplay(PlayerController.instance.activeWeapon);
-        /*UiController.instance.LvUpSelectionButtons[0].updataButtonDisplay(PlayerController.instance.assignedWeapons[0]);
-        UiController.instance.LvUpSelectionButtons[1].updataButtonDisplay(PlayerController.instance.unassignedWeapons[0]);
-        UiController.instance.LvUpSelectionButtons[2].updataButtonDisplay(PlayerController.instance.unassignedWeapons[0]);*/
 
         weaponsToUpgrade.Clear();
         
@@ -112,5 +107,9 @@ public class ExperienceLevelController : MonoBehaviour
                 UiController.instance.LvUpSelectionButtons[i].gameObject.SetActive(false);
             }
         }
+
+        //更新玩家可升级属性
+        PlayerStatController.instance.UpdateDisplay();
+
     }
 }

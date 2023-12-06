@@ -7,11 +7,14 @@ public class CoinPickUp : MonoBehaviour
     public int coinAmount = 1;
     public float moveSpeed;
 
-    private bool movingToPlayer = false;
+    public bool movingToPlayer = false;
     private PlayerController player;
 
-    private float timeBetweenChecks = 0.2f;
-    private float checkCounter;
+    public float RegressInTime = 0.5f;
+    public float backwardDistance = 20f;
+
+    /*private float timeBetweenChecks = 0.2f;
+    private float checkCounter;*/
 
     // Start is called before the first frame update 
     void Start()
@@ -22,12 +25,19 @@ public class CoinPickUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.gameObject == null) return;
+        if (player == null) return;
         if (movingToPlayer)
         {
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+            RegressInTime -= Time.deltaTime;
+            Vector3 targetDirection = -(player.transform.position - transform.position).normalized;
+            Vector3 targetPosition = transform.position + targetDirection * backwardDistance;
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * 3 * Time.deltaTime * RegressInTime);
+            if (RegressInTime < 0)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, player.transform.position, (moveSpeed + player.moveSpeed) * Time.deltaTime);
+            }
         }
-        else
+        /*else
         {
             checkCounter -= Time.deltaTime;
             if (checkCounter <= 0)
@@ -39,7 +49,7 @@ public class CoinPickUp : MonoBehaviour
                     moveSpeed += player.moveSpeed;
                 }
             }
-        }
+        }*/
     }
 
 
@@ -50,6 +60,10 @@ public class CoinPickUp : MonoBehaviour
         {
             CoinController.instance.AddCoint(coinAmount);
             Destroy(gameObject);
+        }
+        else if (collision.gameObject.name == "Pickup Controller")
+        {
+            movingToPlayer = true;
         }
     }
 }

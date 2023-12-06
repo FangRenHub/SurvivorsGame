@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3338114041637953296}
   m_Layer: 0
   m_Name: SilverCoin
-  m_TagString: Untagged
+  m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,4 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinAmount: 1
-  moveSpeed: 1
+  moveSpeed: 3
+  movingToPlayer: 0
+  RegressInTime: 0.3
+  backwardDistance: 30

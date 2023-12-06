@@ -23,7 +23,6 @@ public class DamagerNumber : MonoBehaviour
             transform.localScale = Vector3.MoveTowards(transform.localScale, Vector3.zero, dispSpeed * Time.deltaTime);
             if (transform.localScale.x == 0)
             {
-                //Destroy(gameObject);
                 DamagerNumberController.instance.PlaceInPool(this);
                 transform.localScale = tempScale;
             }

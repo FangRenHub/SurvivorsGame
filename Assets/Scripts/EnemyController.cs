@@ -36,7 +36,8 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(knockBackCounter > 0)
+        if (!PlayerHealthController.instance.isAlive) return;
+        if (knockBackCounter > 0)
         {
             knockBackCounter -= Time.deltaTime; 
             if (moveSpeed > 0)

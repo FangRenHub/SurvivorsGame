@@ -8,11 +8,14 @@ public class ExpPickUp : MonoBehaviour
     public int expValue;
     public float moveSpeed;
 
-    private bool movingToPlayer = false;
+    public bool movingToPlayer = false;
     private PlayerController player;
 
-    private float timeBetweenChecks = 0.2f;
-    private float checkCounter;
+    /*private float timeBetweenChecks = 0.2f;
+    private float checkCounter;*/
+
+    public float RegressInTime = 0.5f;
+    public float backwardDistance = 20f;
 
     // Start is called before the first frame update 
     void Start()
@@ -23,34 +26,43 @@ public class ExpPickUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.gameObject == null) return;
+        if (player == null) return;
         if (movingToPlayer)
         {
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+            RegressInTime -= Time.deltaTime;
+            Vector3 targetDirection = -(player.transform.position - transform.position).normalized;
+            Vector3 targetPosition = transform.position + targetDirection * backwardDistance;
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * 3 * Time.deltaTime * RegressInTime);
+            if (RegressInTime < 0)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, player.transform.position, (moveSpeed + player.moveSpeed) * Time.deltaTime);
+            }
         }
-        else
+        /*else
         {
             checkCounter -= Time.deltaTime;
             if (checkCounter <= 0)
             {
                 checkCounter = timeBetweenChecks;
-                if(Vector3.Distance(transform.position, player.transform.position) < player.pickupRange)
+                if (Vector3.Distance(transform.position, player.transform.position) < player.pickupRange)
                 {
                     movingToPlayer = true;
                     moveSpeed += player.moveSpeed;
-                }   
-            } 
-        }
+                }
+            }
+        }*/
     }
-
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if  (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             ExperienceLevelController.Instance.GetExp(expValue);
             Destroy(gameObject);
+        }
+        else if (collision.gameObject.name == "Pickup Controller")
+        {
+            movingToPlayer = true;
         }
     }
 

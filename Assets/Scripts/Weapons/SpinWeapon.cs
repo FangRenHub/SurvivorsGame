@@ -21,7 +21,6 @@ public class SpinWeapon : Weapon
 
     void Update()
     {
-        //Destroy(gameObject, lifeTime);
         Controller.rotation = Quaternion.Euler(0f, 0f, Controller.rotation.eulerAngles.z + rotateSpeed * Time.deltaTime);
 
 

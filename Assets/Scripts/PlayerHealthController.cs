@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,31 +14,54 @@ public class PlayerHealthController : MonoBehaviour
     }
     
     public Slider healthSlider;
+
     public float currentHealth, maxHealth;
-    // Start is called before the first frame update
+
+    private Animator animator;
+
+    public GameObject beHitEffect;
+
+    public GameObject deathEffect;
+
+    public bool isAlive;
+    
     void Start()
     {
+        isAlive = true;
+        maxHealth = PlayerStatController.instance.health[0].value;
         currentHealth = maxHealth;
         healthSlider.maxValue = maxHealth;
         healthSlider.value = maxHealth;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*if(Input.GetKeyDown(KeyCode.T))
-        {
-            TakeDamge(10f);
-        }*/
+        
     }
 
     public void TakeDamge(float damageToTake)
     {
         currentHealth -= damageToTake;
         healthSlider.value = currentHealth;
-        if (currentHealth <= 0)
+
+        if (currentHealth <= 0 && isAlive)
         {
-            gameObject.SetActive(false);
+            isAlive = false;
+            animator.Play("Death");
+            foreach (Transform child in transform)
+            {
+                child.gameObject.SetActive(false);
+            }
+            //gameObject.SetActive(false);
+            LevelManager.instance.EndLevel();
+            Instantiate(deathEffect, transform.position, quaternion.identity).SetActive(true);
+        }
+        else
+        {
+            Instantiate(beHitEffect, transform.position, quaternion.identity).SetActive(true);
         }
     }
+
 }

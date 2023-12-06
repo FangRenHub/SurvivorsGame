@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5256465040969332770}
   m_Layer: 0
   m_Name: Experience Pickup
-  m_TagString: Untagged
+  m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,7 +47,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   expValue: 1
-  moveSpeed: 1
+  moveSpeed: 3
+  movingToPlayer: 0
+  RegressInTime: 0.3
+  backwardDistance: 30
 --- !u!58 &5256465040969332770
 CircleCollider2D:
   m_ObjectHideFlags: 0

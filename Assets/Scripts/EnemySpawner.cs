@@ -25,7 +25,8 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (target == null) return;
+        if (!PlayerHealthController.instance.isAlive) return;
+
         transform.position = target.position; //锁定摄像机位置
 
         //更新敌人
