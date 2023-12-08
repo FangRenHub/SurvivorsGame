@@ -18,8 +18,9 @@ public class CoinController : MonoBehaviour
     {
         currentCoins += cointToAdd;
         UiController.instance.UpdateCoins();
+        SFXManager.instance.PlaySFXPitched(0);
     }
-    
+
     public void DropCoin(Vector3 position, int value)
     {
         CoinPickUp newCoin = Instantiate(coin, position + new Vector3(.2f,.1f,0f), Quaternion.identity);

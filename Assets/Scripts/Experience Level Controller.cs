@@ -45,6 +45,7 @@ public class ExperienceLevelController : MonoBehaviour
 
         UiController.instance.UpdateExperience(currentExperience, experienceLevels[currentLevel], currentLevel);
 
+        SFXManager.instance.PlaySFXPitched(0);
     }
 
     public void SpawnExp(Vector3 position, int expToGive)
@@ -52,7 +53,7 @@ public class ExperienceLevelController : MonoBehaviour
         Instantiate(pickUp, position, Quaternion.identity).expValue = expToGive;
     }
 
-    void LevelUp()
+    public void LevelUp()
     {
         Time.timeScale = 0f;
         currentExperience -= experienceLevels[currentLevel];
@@ -107,6 +108,8 @@ public class ExperienceLevelController : MonoBehaviour
                 UiController.instance.LvUpSelectionButtons[i].gameObject.SetActive(false);
             }
         }
+
+        UiController.instance.UpdateExperience(currentExperience, experienceLevels[currentLevel], currentLevel);
 
         //更新玩家可升级属性
         PlayerStatController.instance.UpdateDisplay();

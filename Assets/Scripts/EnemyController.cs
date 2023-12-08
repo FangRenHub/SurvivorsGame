@@ -25,6 +25,8 @@ public class EnemyController : MonoBehaviour
     public int expLevelToGive = 1;
     public int coinToGive = 1;
     public float coinDropRate = .3f;
+
+    public GameObject hitEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -99,7 +101,13 @@ public class EnemyController : MonoBehaviour
             {
                 CoinController.instance.DropCoin(transform.position, coinToGive);
             }
+            SFXManager.instance.PlaySFXPitched(3);
         }
+        else
+        {
+            SFXManager.instance.PlaySFXPitched(1);
+        }
+        Instantiate(hitEffect, transform.position, Quaternion.identity);
         DamagerNumberController.instance.SpawnDamage(damageToTake, transform.position);
     }
 

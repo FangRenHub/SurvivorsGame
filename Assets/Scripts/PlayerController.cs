@@ -35,7 +35,10 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
 
         if(assignedWeapons.Count == 0)
-            AddWeapon(UnityEngine.Random.Range(0, unassignedWeapons.Count));
+        {
+            //AddWeapon(UnityEngine.Random.Range(0, unassignedWeapons.Count));
+            ExperienceLevelController.Instance.LevelUp();
+        }
 
         moveSpeed = PlayerStatController.instance.moveSpeed[0].value;
         maxWeapons = Mathf.RoundToInt(PlayerStatController.instance.maxWeapons[0].value);

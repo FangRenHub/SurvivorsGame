@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -7,17 +8,19 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemyToSpawn;
     public float timeToSpawn;
     public Transform minSpawn, maxSpawn;
-    private float sapwnCounter;
+    private float spawnCounter;
     private Transform target;
     
     public List<WaveInfo> waves;
     private int currentWave;
     private float waveCounter;
+
+    private List<GameObject> readToSpawn;
     // Start is called before the first frame update
     void Start()
     {
         target = PlayerHealthController.instance.transform;
-        sapwnCounter = timeToSpawn;
+        spawnCounter = timeToSpawn;
         currentWave = -1;
         GoToNextWave();
     }
@@ -30,21 +33,21 @@ public class EnemySpawner : MonoBehaviour
         transform.position = target.position; //锁定摄像机位置
 
         //更新敌人
-        if (PlayerHealthController.instance.gameObject.activeSelf)
+        if (PlayerHealthController.instance.isAlive)
         {
             if(currentWave < waves.Count)
             {
                 waveCounter -= Time.deltaTime;
                 if(waveCounter <= 0)
                 {
-                    GoToNextWave(); 
+                    GoToNextWave();
+                    SpawnBoss();
                 }
 
-                sapwnCounter -= Time.deltaTime;
-                if (sapwnCounter <= 0)
+                spawnCounter -= Time.deltaTime;
+                if (spawnCounter <= 0)
                 {
-                    sapwnCounter = waves[currentWave].timeBetweenSpawns;
-                    List<GameObject> readToSpawn = waves[currentWave].enemyToSpawn;
+                    spawnCounter = waves[currentWave].timeBetweenSpawns;
                     Instantiate(readToSpawn[Random.Range(0, readToSpawn.Count)], SelectSpawnPoint(), Quaternion.identity);   
                 }
             }
@@ -88,8 +91,17 @@ public class EnemySpawner : MonoBehaviour
         {
             currentWave = waves.Count - 1;
         }
+        readToSpawn = waves[currentWave].enemyToSpawn;
         waveCounter = waves[currentWave].waveLength;
-        sapwnCounter = waves[currentWave].timeBetweenSpawns;
+        spawnCounter = waves[currentWave].timeBetweenSpawns;
+    }
+
+    public void SpawnBoss()
+    {
+        GameObject boss = Instantiate(readToSpawn[Random.Range(0, readToSpawn.Count)], SelectSpawnPoint(), Quaternion.identity);
+        boss.transform.localScale = boss.transform.localScale * 1.5f;
+        boss.GetComponent<EnemyController>().health *= waveCounter + 1;
+        boss.GetComponent<EnemyController>().damage *= 3;
     }
 }
 

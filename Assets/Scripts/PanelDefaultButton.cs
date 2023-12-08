@@ -8,6 +8,8 @@ public class PanelDefaultButton : MonoBehaviour
     public Button defaultButton;
     public Button defaultButton2;
     public Button skipButton;
+
+    
     private void OnEnable()
     {
         if (defaultButton.gameObject.activeSelf)

@@ -57,10 +57,12 @@ public class PlayerHealthController : MonoBehaviour
             //gameObject.SetActive(false);
             LevelManager.instance.EndLevel();
             Instantiate(deathEffect, transform.position, quaternion.identity).SetActive(true);
+            SFXManager.instance.PlaySFX(4);
         }
         else
         {
             Instantiate(beHitEffect, transform.position, quaternion.identity).SetActive(true);
+            SFXManager.instance.PlaySFX(2);
         }
     }
 

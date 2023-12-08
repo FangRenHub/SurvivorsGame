@@ -70,25 +70,25 @@ public class UiController : MonoBehaviour
     public void PurchaseMoveSpeed()
     {
         PlayerStatController.instance.PurchaseMoveSpeed();
-        SkipLevelUp();
+        //SkipLevelUp();
     }
 
     public void PurchaseHealth()
     {
         PlayerStatController.instance.PurchaseHealth();
-        SkipLevelUp();
+        //SkipLevelUp();
     }
 
     public void PurchasePickupRange()
     {
         PlayerStatController.instance.PurchasePickupRange();
-        SkipLevelUp();
+        //SkipLevelUp();
     }
 
     public void PurchaseMaxWeapons()
     {
         PlayerStatController.instance.PurchaseMaxWeapons();
-        SkipLevelUp();
+        //SkipLevelUp();
     }
 
     public void UpdateTimer(float time)
